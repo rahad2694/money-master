@@ -1,3 +1,33 @@
+/* Adding google font Poppins */
+body{
+    font-family: 'Licorice', cursive;
+font-family: 'Poppins', sans-serif;
+}
+
+/* Styling savings input field */
 #savings-input{
-    width: 30%;
+    width: 20%;
+    /* margin-right: 10px;
+    margin-left: 10px; */
+    background-color: #DCDCDC;
+    border: 1px solid white;
+    /* padding-left: 30px; */
+}
+
+/* Styling buttons */
+.button-border{
+    border: 1px solid white;
+}
+.button-border:hover{
+    border: 1px solid black;
+}
+
+/* styling the input boxes */
+.input-box{
+    width: 40%;
+    margin-right: 30px;
+    margin-left: 10px;
+    background-color: #DCDCDC;
+    border: 1px solid white;
+    padding-left: 10px;
 }
