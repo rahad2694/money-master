@@ -39,24 +39,35 @@
                         <h6 class="my-auto">Income: </h6>
                         <input id="income-input-box" class="input-box" type="text">
                     </div>
-                    <p id="alert-in-income" class="alert-msg text-danger text-end d-none">*String is not allowed!</p>
+                    <!-- Error handling Message in UI -->
+                    <p id="string-alert-in-income" class="alert-msg text-danger text-end d-none">*String is not allowed!</p>
+                    <p id="negative-alert-in-income" class="alert-msg text-danger text-end d-none">*Please enter Positive Numbers!</p>
                     <!-- Expenses -->
+                        <!-- Food Expense -->
                     <h5 class="py-2 text-center fw-bold">Expenses</h5>
                     <div class="d-flex justify-content-end py-2">
                         <h6 class="my-auto">Food: </h6>
                         <input id="food-input-box" class="input-box"  type="text">
                     </div>
-                    <p id="alert-in-food" class="alert-msg text-danger text-end d-none">*String is not allowed!</p>
+                    <!-- Error handling Message in UI -->
+                    <p id="string-alert-in-food" class="alert-msg text-danger text-end d-none">*String is not allowed!</p>
+                    <p id="negative-alert-in-food" class="alert-msg text-danger text-end d-none">*Please enter Positive Numbers!</p>
+                        <!-- Rent Expense -->
                     <div class="d-flex justify-content-end py-2">
                         <h6 class="my-auto">Rent: </h6>
                         <input id="rent-input-box" class="input-box" type="text">
                     </div>
-                    <p id="alert-in-rent" class="alert-msg text-danger text-end d-none">*String is not allowed!</p>
+                    <!-- Error handling Message in UI -->
+                    <p id="string-alert-in-rent" class="alert-msg text-danger text-end d-none">*String is not allowed!</p>
+                    <p id="negative-alert-in-rent" class="alert-msg text-danger text-end d-none">*Please enter Positive Numbers!</p>
+                        <!-- Clothes Expense -->
                     <div class="d-flex justify-content-end py-2">
                         <h6 class="my-auto">Clothes: </h6>
                         <input id="clothes-input-box" class="input-box" type="text">
                     </div>
-                    <p id="alert-in-clothes" class="alert-msg text-danger text-end d-none">*String is not allowed!</p>
+                    <!-- Error handling Message in UI -->
+                    <p id="string-alert-in-clothes" class="alert-msg text-danger text-end d-none">*String is not allowed!</p>
+                    <p id="negative-alert-in-clothes" class="alert-msg text-danger text-end d-none">*Please enter Positive Numbers!</p>
                     <!-- Calculating Total Expenses & Balance -->
                     <div class="d-flex justify-content-center">
                         <button onclick="updateTotal()" class="button-border bg-primary text-white rounded px-4 py-1 my-2">Calculate</button>
