@@ -26,6 +26,8 @@ function updateTotal(){
     else{
         totalExpenses.innerText = '00';
         balanceBeforeSave.innerText = '00';
+        saveAmount.innerText = '00';
+        balanceAfterSave.innerText = '00';
     }
 }
 function errorMessageCheck(targetField){
@@ -37,12 +39,16 @@ function errorMessageCheck(targetField){
         document.getElementById(negativeAlertId).classList.remove('d-none');
         document.getElementById(stringAlertId).classList.add('d-none');
         targetFieldBox.classList.add('bg-warning');
+        saveAmount.innerText = '00';
+        balanceAfterSave.innerText = '00';
         targetFieldBox.value ='';
         return;
     } else if (isNaN(targetFieldBox.value)){
         document.getElementById(stringAlertId).classList.remove('d-none');
         document.getElementById(negativeAlertId).classList.add('d-none');
         targetFieldBox.classList.add('bg-warning');
+        saveAmount.innerText = '00';
+        balanceAfterSave.innerText = '00';
         targetFieldBox.value ='';
         return;
     } else if (targetFieldBox.value >0){
