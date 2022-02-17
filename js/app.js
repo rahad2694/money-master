@@ -22,8 +22,8 @@ function updateTotal(){
             saveAmount.innerText = '00';
             balanceAfterSave.innerText = '00';
         } else{
-            totalExpenses.innerText = monthlyCost;
-            balanceBeforeSave.innerText = Number(incomeInputBox.value) - monthlyCost;
+            totalExpenses.innerText = monthlyCost.toFixed(2);
+            balanceBeforeSave.innerText = (Number(incomeInputBox.value) - monthlyCost).toFixed(2);
             document.getElementById('higher-expense-alert').classList.add('d-none');
         }
     }
@@ -72,8 +72,8 @@ document.getElementById('save-button').addEventListener('click',function(){
         const saveTotal = Number(incomeInputBox.value) * (Number(saveInputBox.value)/100);
         document.getElementById('wrong-percentage-alert').classList.add('d-none');
         if(balanceBeforeSave.innerText > saveTotal){
-            saveAmount.innerText = saveTotal;
-            balanceAfterSave.innerText = balanceBeforeSave.innerText - saveAmount.innerText;
+            saveAmount.innerText = saveTotal.toFixed(2);
+            balanceAfterSave.innerText = (balanceBeforeSave.innerText - saveAmount.innerText).toFixed(2);
             document.getElementById('low-balance-alert').classList.add('d-none');
         }
         else{
