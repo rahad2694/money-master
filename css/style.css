@@ -5,7 +5,7 @@ font-family: 'Poppins', sans-serif;
 }
 
 /* Styling savings input field */
-#savings-input{
+#save-input-box{
     width: 20%;
     /* margin-right: 10px;
     margin-left: 10px; */
@@ -30,4 +30,9 @@ font-family: 'Poppins', sans-serif;
     background-color: #DCDCDC;
     border: 1px solid white;
     padding-left: 10px;
+}
+
+/* Error Handling messages */
+.alert-msg{
+    font-size: 14px;
 }
