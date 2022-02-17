@@ -17,6 +17,10 @@ function updateTotal(){
     if(incomeInputBox.value > 0 && foodInputBox.value > 0 && rentInputBox.value > 0 &&clothesInputBox.value > 0){
         if(incomeInputBox.value < monthlyCost){
             document.getElementById('higher-expense-alert').classList.remove('d-none');
+            totalExpenses.innerText = '00';
+            balanceBeforeSave.innerText = '00';
+            saveAmount.innerText = '00';
+            balanceAfterSave.innerText = '00';
         } else{
             totalExpenses.innerText = monthlyCost;
             balanceBeforeSave.innerText = Number(incomeInputBox.value) - monthlyCost;
