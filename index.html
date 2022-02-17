@@ -41,7 +41,7 @@
                     </div>
                     <!-- Error handling Message in UI -->
                     <p id="string-alert-in-income" class="alert-msg text-danger text-end d-none">*String is not allowed as Income <i class="fas fa-exclamation-triangle"></i></p>
-                    <p id="negative-alert-in-income" class="alert-msg text-danger text-end d-none">*Please enter Positive value as Income <i class="fas fa-exclamation-triangle"></i></p>
+                    <p id="negative-alert-in-income" class="alert-msg text-danger text-end d-none">*Please enter a Positive value as Income <i class="fas fa-exclamation-triangle"></i></p>
                     <p id="higher-expense-alert" class="alert-msg text-danger text-center d-none">*Income can not be lower than Expenses <i class="fas fa-exclamation-triangle"></i></p>
                     <!-- Expenses -->
                         <!-- Food Expense -->
@@ -52,7 +52,7 @@
                     </div>
                     <!-- Error handling Message in UI -->
                     <p id="string-alert-in-food" class="alert-msg text-danger text-end d-none">*String is not allowed as Food cost <i class="fas fa-exclamation-triangle"></i></p>
-                    <p id="negative-alert-in-food" class="alert-msg text-danger text-end d-none">*Please enter Positive value as Food cost <i class="fas fa-exclamation-triangle"></i></p>
+                    <p id="negative-alert-in-food" class="alert-msg text-danger text-end d-none">*Please enter a Positive value as Food cost <i class="fas fa-exclamation-triangle"></i></p>
                         <!-- Rent Expense -->
                     <div class="d-flex justify-content-end py-2">
                         <h6 class="my-auto">Rent: </h6>
@@ -60,7 +60,7 @@
                     </div>
                     <!-- Error handling Message in UI -->
                     <p id="string-alert-in-rent" class="alert-msg text-danger text-end d-none">*String is not allowed as Rent cost <i class="fas fa-exclamation-triangle"></i></p>
-                    <p id="negative-alert-in-rent" class="alert-msg text-danger text-end d-none">*Please enter Positive value as Rent cost <i class="fas fa-exclamation-triangle"></i></p>
+                    <p id="negative-alert-in-rent" class="alert-msg text-danger text-end d-none">*Please enter a Positive value as Rent cost <i class="fas fa-exclamation-triangle"></i></p>
                         <!-- Clothes Expense -->
                     <div class="d-flex justify-content-end py-2">
                         <h6 class="my-auto">Clothes: </h6>
@@ -68,7 +68,7 @@
                     </div>
                     <!-- Error handling Message in UI -->
                     <p id="string-alert-in-clothes" class="alert-msg text-danger text-end d-none">*String is not allowed as Clothes cost <i class="fas fa-exclamation-triangle"></i></p>
-                    <p id="negative-alert-in-clothes" class="alert-msg text-danger text-end d-none">*Please enter Positive value as Clothes cost <i class="fas fa-exclamation-triangle"></i></p>
+                    <p id="negative-alert-in-clothes" class="alert-msg text-danger text-end d-none">*Please enter a Positive value as Clothes cost <i class="fas fa-exclamation-triangle"></i></p>
                     <!-- Calculating Total Expenses & Balance -->
                     <div class="d-flex justify-content-center">
                         <button onclick="updateTotal()" class="button-border bg-primary text-white rounded px-4 py-1 my-2">Calculate</button>
@@ -85,8 +85,9 @@
                     </div>
                     <!-- Error handling Message in UI -->
                     <p id="string-alert-in-save" class="alert-msg text-danger text-center d-none">*String is not allowed as Savings percentage <i class="fas fa-exclamation-triangle"></i></p>
-                    <p id="negative-alert-in-save" class="alert-msg text-danger text-center d-none">*Please enter Positive value as savings percentage <i class="fas fa-exclamation-triangle"></i></p>
+                    <p id="negative-alert-in-save" class="alert-msg text-danger text-center d-none">*Please enter a Positive value as savings percentage <i class="fas fa-exclamation-triangle"></i></p>
                     <p id="low-balance-alert" class="alert-msg text-danger text-center d-none">*Not Enough Balance to Save <i class="fas fa-exclamation-triangle"></i></p>
+                    <p id="wrong-percentage-alert" class="alert-msg text-danger text-center d-none">*Save percentage should be less than 100 <i class="fas fa-exclamation-triangle"></i></p>
                     <!-- Output of Saving Amount & Balance -->
                     <div class="mt-3">
                         <h6 class="py-1 text-center fw-bold">Saving Amount: <span id="save-amount">00</span></h6>

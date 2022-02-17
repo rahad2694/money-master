@@ -60,6 +60,7 @@ document.getElementById('save-button').addEventListener('click',function(){
     errorMessageCheck('save');
     if(saveInputBox.value > 0 && saveInputBox.value <= 100){
         const saveTotal = Number(incomeInputBox.value) * (Number(saveInputBox.value)/100);
+        document.getElementById('wrong-percentage-alert').classList.add('d-none');
         if(balanceBeforeSave.innerText > saveTotal){
             saveAmount.innerText = saveTotal;
             balanceAfterSave.innerText = balanceBeforeSave.innerText - saveAmount.innerText;
@@ -69,7 +70,15 @@ document.getElementById('save-button').addEventListener('click',function(){
             document.getElementById('low-balance-alert').classList.remove('d-none');
             document.getElementById('negative-alert-in-save').classList.add('d-none');
             document.getElementById('string-alert-in-save').classList.add('d-none');
+            saveAmount.innerText = '00';
+            balanceAfterSave.innerText = '00';
             saveInputBox.value ='';
         }
+    }
+    else if(saveInputBox.value>100){
+        document.getElementById('wrong-percentage-alert').classList.remove('d-none');
+        saveAmount.innerText = '00';
+        balanceAfterSave.innerText = '00';
+        saveInputBox.value ='';
     }
 })
